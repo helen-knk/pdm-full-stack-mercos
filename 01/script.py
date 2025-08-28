@@ -23,8 +23,10 @@ def obter_idade_usuario():
             print('Idade inválida. Fora do intervalo de 0 ao 120.')
 
 def calcular_ano_centenario(idade):
+    idade_centenario = 100
+
     ano_atual = datetime.datetime.now().year
-    return ano_atual + (100 - idade)
+    return ano_atual + (idade_centenario - idade)
 
 def exibir_resultado(nome, ano_centenario):
     print(f'{nome}, você fará 100 anos em {ano_centenario}.')
