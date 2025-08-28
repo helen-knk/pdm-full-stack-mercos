@@ -32,8 +32,8 @@ def exibir_resultado(nome, ano_centenario):
 def main():
     nome = obter_nome_usuario()
     idade = obter_idade_usuario()
-    ano_100 = calcular_ano_centenario(idade)
-    exibir_resultado(nome, ano_100)
+    ano_centenario = calcular_ano_centenario(idade)
+    exibir_resultado(nome, ano_centenario)
 
 if __name__ == '__main__':
     main()
