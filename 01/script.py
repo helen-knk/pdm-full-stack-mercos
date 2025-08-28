@@ -1,7 +1,13 @@
 import datetime
 
 def obter_nome_usuario():
-    return input('Digite seu nome: ').strip().title()
+    while True:
+        nome = input('Digite seu nome: ').strip().title()
+        if not nome:
+            print('Digite corretamente o seu nome.')
+            continue
+
+        return nome
 
 def obter_idade_usuario():
     while True:
